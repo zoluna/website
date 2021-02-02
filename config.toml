@@ -1,0 +1,48 @@
+baseurl                  = "https://zoluna.github.io/"           # Your domain name
+languageCode             = "en-us"
+defaultContentLanguage   = "en"
+isMultilingual           = false
+title                    = "i am alex"
+theme                    = "sam"
+pygmentsStyle            = "monokai"                        # https://help.farbox.com/pygments.html
+pygmentsCodefences       = true
+# googleAnalytics        = ""                               # Tracking code, eg. "UA-111111111-1"
+
+[params]
+    dateform             = "Mon Jan 02, 2006"
+    dateformfull         = "Mon Jan 2 2006 15:04:05 EST"
+    favicon              = "sam.ico"
+    homepage             = "main"                           # What to call the home page link
+    footerText           = "This website was made by Alex Born."
+
+# Metadata for Open Graph and Twitter
+    description          = "A new Hugo site."               # Max 160 characters show in search results
+    images               = ["tn.png"]                       # Image that shows on Twitter cards and Open Graph links to the site
+    title                = "Call me Sam"
+    # rss                = ""
+publishDir = "docs"
+[[params.videoBackground.sources]]
+    source  = "/sample_video.mp4"
+    type    = "video/mp4"
+    poster  = "/background.png"
+[params.videoBackground]
+    overlay = "rgba(0, 0, 0, 0.4)" # optional
+
+[[params.mainMenu]]
+    link = "posts/introduction"
+    text = "i am alex"
+
+[[params.mainMenu]]
+    link = "/content/gallery"
+    text = "photography"
+
+[[params.mainMenu]]
+    link = "https://open.spotify.com/artist/2EcaIGfWSRRSHdXkhpUeMA?si=eVwmV3WZTt6kY_LkeLBKiQ"
+    text = "sounds"
+
+[[params.mainMenu]]
+    link = "posts/title"
+    text = "projects"
+
+[imaging]
+    quality = 75
